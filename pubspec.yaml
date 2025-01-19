@@ -1,0 +1,18 @@
+name: timeracer
+description: A Flutter app that tracks speed and provides notifications.
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^13.0.0
+  geolocator: ^10.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
