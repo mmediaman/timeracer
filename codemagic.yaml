@@ -1,0 +1,17 @@
+workflows:
+  default-workflow:
+    name: Default Workflow
+    triggering:
+      events:
+        - push
+    environment:
+      flutter: stable
+    scripts:
+      - name: Install dependencies
+        script: flutter pub get
+      - name: Clear CM cache
+        script: flutter clean
+      - name: Build APK
+        script: flutter build apk
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
